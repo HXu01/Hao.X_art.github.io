@@ -3,7 +3,7 @@
 }
 
 .nav_bar a {
-    font-size: 24px;
+    font-size: 32px;
     text-decoration: none;
 }
 
@@ -15,11 +15,11 @@
     max-width: 700px;
 }
 .project_card_name  {
-    text-align: center;
+    text-align: left;
 }
 
 .project_card_about {
-    text-align: center;
+    text-align: left;
 }
 
 .project_page_description {
