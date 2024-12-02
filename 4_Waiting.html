@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="styles/simple-grid.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <style>
+        body {
+            background-color: rgb(36, 42, 53);
+            height: 100vh;
+            overflow: hidden;
+        }
+        .container {
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row nav_bar">
+            <div class="col-4">
+                <a class="nav_link text-left" href="index.html">Home</a>
+            </div>
+        </div>
+
+        <section class="row project_page_description">
+            <div class="col-4">
+                <h3 class="project_title text-left">Waiting</h3>
+                <p class="project_tools text-left">2024 Spring</p>
+                <p class="project_tools text-left">Tool: Adobe Premiere, Blender, Clip Studio Paint</p>
+                <p class="project_description">
+                    This is my latest addition to my portfolio, and like my other works, it's an experimental piece. Using Blender, I crafted the environment by blending photorealistic textures with toon shaders. The 2D animated character was created in Clip Studio Paint and then imported as an image sequence.
+
+                    The sound featured in this video was captured from footage taken in Harbin, China, and combined to evoke the ambiance of my childhood home. My aim was to recreate an environment reminiscent of my hometown, where I spent my early years. Throughout my life, I've often felt a sense of stagnation, haunted by the things I've lost over time. This video serves as both a homage to my artistic journey and an effort to let go of my emotional baggage.
+                </p>
+            </div>
+            <div class="col-8" style="text-align: center;">
+                <p class="quote" style="margin-top: 1.5em;">
+                    "You don't have to wait anymore, it's time to let go."
+                </p>
+                <iframe width="700" height="394" src="https://www.youtube.com/embed/YMxGrFTD3ag?si=WPoHpeHdKmnIoQvE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

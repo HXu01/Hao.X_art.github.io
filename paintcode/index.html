@@ -1,0 +1,57 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+  <script language="javascript" type="text/javascript" src="sketch.js"></script>
+  <link rel="stylesheet" href="../styles/simple-grid.css">
+  <link rel="stylesheet" href="../styles/main.css">
+  <style>
+    body {
+      background-color: #222;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row nav_bar">
+      <div class="col-4">
+        <a class="nav_link text-left" href="../index.html">Home</a>
+      </div>
+    </div>
+
+    <section class="row project_page_description">
+      <div class="col-4">
+        <h3 class="project_title text-left">Manga Drawing Program</h3>
+        <p class="project_tools text-left">Tool: p5.js</p>
+        <p class="project_description">
+          Controls:
+          <br><br>
+          Numbers 1-5 to change brushes
+          <br>
+          Color buttons to change color
+          <br>
+          '[' and ']' to adjust cursor size
+          <br>
+          'x' to clear the canvas
+          <br><br>
+          Brush Types:
+          <br><br>
+          1 = Normal brush
+          <br>
+          2 = Sketchy brush
+          <br>
+          3 = Action line brush
+          <br>
+          4 = Dust brush
+          <br>
+          5 = Word bubble brush
+        </p>
+      </div>
+      <div class="col-8">
+        <main style="position: absolute; left: 300px; top: 60px;"></main>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
