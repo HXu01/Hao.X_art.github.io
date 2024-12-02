@@ -10,31 +10,92 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 
     <style>
-        /* Prevent scroll by hiding overflow */
-        body::before {
-            display: none;  /* This will hide the layer on the index page */
-        }
-        
-        body, .container {
-            height: 100vh;
+        /* Reset base styles */
+        * {
+            box-sizing: border-box;
             margin: 0;
+            padding: 0;
+        }
+
+        body, .container {
+            min-height: 100vh;
+            overflow-x: hidden; /* Prevent horizontal scroll */
+            width: 100%;
+        }
+
+        /* Project card and image styling */
+        .project_card {
+            margin: 5px;
             overflow: hidden;
+            width: 100%;
+            aspect-ratio: 1; /* Make cards square */
         }
 
         .project_card img {
-            width: 300px;
-            height: auto;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Maintain aspect ratio while filling container */
         }
 
-        .project_card:hover img {
-            transform: scale(1.2); /* Instant enlargement on hover */
+        /* Responsive grid adjustments */
+        @media screen and (max-width: 768px) {
+            .container {
+                padding: 5px;
+            }
+
+            .row {
+                display: flex;
+                flex-wrap: wrap;
+                margin: 0;
+            }
+
+            .col-2 {
+                width: 33.333%; /* 3 columns on tablet */
+                padding: 5px;
+            }
+
+            .nav_bar {
+                padding: 10px 0;
+            }
+
+            .nav_bar .col-4 {
+                width: 33.333%;
+                text-align: center;
+                font-size: 0.9em;
+            }
+
+            .footer {
+                position: relative;
+                padding: 10px;
+                margin-top: 10px;
+            }
         }
 
-        .project_card {
-            margin: 15px; /* Add spacing between images */
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        /* Small mobile adjustments */
+        @media screen and (max-width: 480px) {
+            .col-2 {
+                width: 50%; /* 2 columns on mobile */
+            }
+
+            .nav_bar .col-4 {
+                width: 100%;
+                margin-bottom: 5px;
+            }
+
+            .project_card {
+                margin: 3px;
+            }
+
+            .project_card:hover img {
+                transform: scale(1.1); /* Reduce hover scale on mobile */
+            }
+        }
+
+        /* Extra small devices */
+        @media screen and (max-width: 320px) {
+            .col-2 {
+                width: 100%; /* 1 column on very small devices */
+            }
         }
 
         .footer {
